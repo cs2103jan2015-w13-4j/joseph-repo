@@ -48,7 +48,10 @@ public class Parser {
 	public Parser(){
 	}
 	
-	
+	/*
+	 * Need XML file path to read
+	 * ArrayList of tasks for input
+	 * */
 	public boolean tableToXml(String xmlFilePath, ArrayList<Task> mArrayTask){
 		boolean isSaved = false;
 		try{
@@ -122,8 +125,7 @@ public class Parser {
 	
 	
 	/*
-	 * HashMap
-	 * key  id of task (String)
+	 * ArrayList
 	 * value  task object
 	 * */
 	public ArrayList<Task> XmltoTable(String xmlFilePath){
